@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <title>Brandon Mendez Music</title>
 <meta charset="UTF-8">
@@ -40,19 +39,11 @@ body {font-family: "Lato", sans-serif}
 
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center w3-animate-fading">
-    <img src="http://i.imgur.com/2yxWxSN.jpg" style="width:50%">
+    <img src="http://i.imgur.com/farnlAR.jpg" style="width:100%">
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center w3-animate-fading">
-    <img src="http://i.imgur.com/f1NcZGJ.jpg" style="width:50%"> 
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center w3-animate-fading">
-    <img src="http://i.imgur.com/IuyPE77.jpg" style="width:50%">
-    </div>
-  </div>
-    <div class="mySlides w3-display-container w3-center w3-animate-fading">
-    <img src="http://i.imgur.com/WBqVY5P.jpg" style="width:50%">
+    <img src="http://i.imgur.com/4dhxZ4i.jpg" style="width:100%"> 
     </div>
   </div>
 
@@ -101,10 +92,9 @@ Under scholarship, Brandon received his Bachelor of Music degree in Guitar Perfo
 
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
+// Automatic Slideshow - change image every 10 seconds
 var myIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
@@ -114,9 +104,8 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
+    setTimeout(carousel, 10000);    
 }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
     var x = document.getElementById("navDemo");
@@ -126,14 +115,12 @@ function myFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
-
 // When the user clicks on <about> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
